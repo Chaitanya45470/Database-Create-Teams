@@ -1,0 +1,25 @@
+<% include partials/header.ejs%>
+<!--<html>
+    <head>
+        <style>
+            body{background:skyblue;font-family:verdana;color:#fff;padding:30px;text-align:center;}
+            h1{font-size:48px;text-transform:uppercase;letter-spaciinng:2px;text-align:center;}
+        </style>
+<title>My express app</title>
+    </head>-->
+    <body>
+        <h1><%= title%></h1>
+        <form method="POST" action="/">
+            <label>File Path</label><br>
+            <input type="text" name="file_path">
+            <br>
+            <label>Team Size</label><br>
+            <input type="text" name="team_size">
+            <br>
+         <label>Do you wish to continue when unequal Team Division(y or n)</label><br>
+         <input type="text" name="y_n">
+            <br><br>
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
